@@ -298,19 +298,63 @@ nav a.active {
 }
 
 /* FOOTER */
-footer {
-    background: var(--secondary-color);
+.site-footer {
+    background: linear-gradient(135deg, #021450, #05c1da);
     color: var(--white);
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
-.footer-links a {
-    color: var(--white);
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 3rem 0 2rem;
+}
+
+.footer-brand h3,
+.footer-contact h4,
+.footer-links h4,
+.footer-social h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+    display: inline-block;
+    padding-bottom: 0.4rem;
+}
+
+.footer-brand p,
+.footer-contact p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #f1f5ff;
+    margin-bottom: 0.7rem;
+}
+
+.footer-links a,
+.footer-social a,
+.footer-contact a {
+    display: block;
+    color: #f1f5ff;
     text-decoration: none;
+    margin-bottom: 0.7rem;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
 }
 
+.footer-links a:hover,
+.footer-social a:hover,
+.footer-contact a:hover {
+    color: #ffffff;
+    padding-left: 6px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #e8f0ff;
+}
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .nav-links {
