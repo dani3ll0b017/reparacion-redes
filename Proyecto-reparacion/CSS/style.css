@@ -107,7 +107,7 @@ nav a.active {
 .hero {
     background:
         linear-gradient(rgba(1, 117, 133, 0.6), rgba(4, 176, 206, 0.6)),
-        url("../IMG/fondo1.jpeg"); 
+        url("../img/fondo1.jpeg"); 
     background-size: cover;
     background-position: center;
     min-height: 80vh;
