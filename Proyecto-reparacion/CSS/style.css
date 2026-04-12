@@ -75,9 +75,13 @@ nav a {
     transition: color 0.3s;
 }
 
-nav a:hover,
 nav a.active {
-    color: #4da3ff;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+nav a:hover {
+    color: #cceeff;
 }
 
 #menu-toggle {
