@@ -902,3 +902,172 @@ nav a:hover {
         font-size: 0.95rem;
     }
 }
+
+
+/*PROMOCIONES*/
+
+/* ===== PROMOCIONES ===== */
+.promotions {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.promotions h2 {
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+    color: var(--text-color);
+}
+
+/* GRID DE PROMOCIONES */
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* TARJETA */
+.promo-card {
+    background: var(--white);
+    padding: 2.2rem 2rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+
+.promo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* TARJETA DESTACADA */
+.destacado {
+    border: 2px solid var(--primary-color);
+}
+
+/* ETIQUETA SUPERIOR */
+.promo-tag {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.35rem 0.9rem;
+    font-size: 0.8rem;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+/* TÍTULO */
+.promo-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* PRECIO */
+.precio {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    color: var(--text-color);
+}
+
+/* LISTA */
+.promo-card ul {
+    list-style: none;
+    text-align: left;
+    margin: 1rem 0 2rem;
+    padding-left: 0;
+}
+
+.promo-card ul li {
+    margin-bottom: 0.7rem;
+    padding-left: 1.4rem;
+    position: relative;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.promo-card ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* BOTÓN */
+.promo-card .btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.promo-card .btn:hover {
+    background: #004494;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .promotions {
+        padding: 3rem 0;
+    }
+
+    .promotions h2 {
+        font-size: 1.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .promo-card {
+        padding: 2rem 1.4rem;
+    }
+
+    .promo-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .precio {
+        font-size: 1.15rem;
+    }
+
+    .promo-tag {
+        font-size: 0.75rem;
+        top: -10px;
+        left: 15px;
+    }
+}
+
+.page-banner {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.page-banner h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.page-banner p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .page-banner h2 {
+        font-size: 2rem;
+    }
+
+    .page-banner p {
+        font-size: 1rem;
+    }
+}
