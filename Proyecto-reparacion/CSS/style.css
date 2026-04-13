@@ -1306,40 +1306,73 @@ nav a:hover {
 /*COTIZACIONES */
 
 /* COTIZACIONES */
+/* ===== SECCIÓN PRINCIPAL ===== */
 .quotes-section {
     padding: 4rem 0;
 }
 
+/* GRID */
 .quotes-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
 }
 
+/* TARJETAS */
 .quote-card {
     background: var(--white);
     border-radius: 14px;
     padding: 2rem;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
 }
 
+.quote-card:hover {
+    transform: translateY(-6px);
+}
+
+/* ===== ICONOS (AQUI ESTÁ LO IMPORTANTE) ===== */
 .quote-icon {
-    font-size: 2.2rem;
+    width: 70px;
+    height: 70px;
     margin-bottom: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
 
+/* ICONO FONT AWESOME */
+.quote-icon a {
+    color: var(--white);
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+/* EFECTO HOVER */
+.quote-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+/* TITULOS */
 .quote-card h3 {
     margin-bottom: 1rem;
     color: var(--text-color);
     font-size: 1.6rem;
 }
 
+/* TEXTO */
 .quote-card p {
     line-height: 1.7;
     margin-bottom: 1.5rem;
     color: #555;
 }
 
+/* LISTA PAGOS */
 .payment-list {
     list-style: none;
     padding: 0;
@@ -1353,13 +1386,17 @@ nav a:hover {
     line-height: 1.6;
 }
 
+/* CHECK ICON */
 .payment-list li::before {
-    content: "✅";
+    content: "✔";
     position: absolute;
     left: 0;
     top: 0;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
+/* ===== BLOQUE INFERIOR ===== */
 .quote-note {
     padding-bottom: 4rem;
 }
@@ -1384,7 +1421,9 @@ nav a:hover {
     line-height: 1.7;
 }
 
+/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
+
     .quotes-grid {
         grid-template-columns: 1fr;
     }
