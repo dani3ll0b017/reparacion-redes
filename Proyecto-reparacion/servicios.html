@@ -1,31 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | A&H TECHNOLOGY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <div class="container nav-container">
+        <h1 class="logo">A&H TECHNOLOGY</h1>
+
+        <nav id="menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html" class="active">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="cotizaciones.html">Cotizaciones</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+            </ul>
+        </nav>
+
+        <button id="menu-toggle">☰</button>
+    </div>
+</header>
+
+<!-- ===== CONTENIDO ===== -->
 <main>
-        <section class="container" style="padding: 4rem 0;">
-            <h2 style="text-align: center; margin-bottom: 2rem;">Nuestros Servicios Especializados</h2>
-            
-            <div class="grid-services">
-                <article class="card">
-                    <img src="img/mantenimiento-pc.jpg" alt="Mantenimiento interno de una computadora">
-                    <h3>Reparación de Computadoras</h3>
-                    <p>Diagnóstico de fallas, formateo, instalación de sistemas operativos, respaldo de información, y cambio de piezas (discos sólidos, memoria RAM, pantallas).</p>
-                </article>
 
-                <article class="card">
-                    <img src="img/impresoras.jpg" alt="Técnico revisando una impresora láser">
-                    <h3>Mantenimiento de Impresoras</h3>
-                    <p>Limpieza de cabezales, destape de inyectores, reseteo de almohadillas y reparación de atascos de papel para impresoras de inyección y láser.</p>
-                </article>
+<!-- BANNER -->
+<section class="page-banner">
+    <div class="container">
+        <h2>Nuestros Servicios</h2>
+        <p>Soluciones tecnológicas profesionales para hogares y empresas.</p>
+    </div>
+</section>
 
-                <article class="card">
-                    <img src="img/instalacion-redes.jpg" alt="Cableado estructurado de red">
-                    <h3>Instalación de Redes</h3>
-                    <p>Cableado estructurado, configuración de routers y repetidores, ponchado de cables UTP y optimización de señal Wi-Fi para hogares y oficinas.</p>
-                </article>
+<!-- SERVICIOS ESTILO PROFESIONAL -->
+<section class="services-showcase container">
 
-                <article class="card">
-                    <img src="img/instalacion-camaras.jpg" alt="Configuración de DVR para cámaras">
-                    <h3>Cámaras de Seguridad</h3>
-                    <p>Instalación de cámaras IP y análogas, configuración de DVR/NVR y enlace a tu teléfono móvil para monitoreo en tiempo real las 24 horas.</p>
-                </article>
-            </div>
-        </section>
-    </main>
+    <div class="service-row">
+        <div class="service-image">
+            <img src="img/reparacion.jpg" alt="Reparación de computadoras">
+        </div>
+        <div class="service-text">
+    <h3>Reparación de Computadoras</h3>
+    <p>Solucionamos fallas de hardware y software con atención rápida y profesional.</p>
+    <a href="https://wa.me/50493942215?text=Hola,%20necesito%20reparar%20mi%20computadora.%20%C2%BFMe%20pueden%20ayudar?" target="_blank" class="service-btn">Consultar</a>
+</div>
+    </div>
+
+    <div class="service-row reverse">
+        <div class="service-image">
+            <img src="img/camaras.jpg" alt="Instalación de cámaras">
+        </div>
+        <div class="service-text">
+    <h3>Instalación de Cámaras</h3>
+    <p>Protege tu hogar o negocio con sistemas modernos de videovigilancia.</p>
+    <a href="https://wa.me/50493942215?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20instalaci%C3%B3n%20de%20c%C3%A1maras%20de%20seguridad.%20%C2%BFMe%20pueden%20asesorar?" target="_blank" class="service-btn">Consultar</a>
+</div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-image">
+            <img src="img/anydesk.png" alt="Soporte remoto">
+        </div>
+        <div class="service-text">
+    <h3>Soporte Remoto</h3>
+    <p>Asistencia técnica sin salir de casa o negocio.</p>
+    <a href="https://wa.me/50493942215?text=Hola,%20necesito%20soporte%20remoto%20para%20mi%20equipo.%20%C2%BFMe%20pueden%20ayudar?" target="_blank" class="service-btn">Consultar</a>
+</div>
+    </div>
+
+    <div class="service-row reverse">
+        <div class="service-image">
+            <img src="img/diagnostico.jpg" alt="Diagnóstico técnico">
+        </div>
+        <div class="service-text">
+    <h3>Diagnóstico Técnico</h3>
+    <p>Evaluamos tu equipo y detectamos fallas con precisión.</p>
+    <a href="https://wa.me/50493942215?text=Hola,%20quiero%20un%20diagn%C3%B3stico%20t%C3%A9cnico%20para%20mi%20equipo.%20%C2%BFMe%20pueden%20ayudar?" target="_blank" class="service-btn">Consultar</a>
+</div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-image">
+            <img src="img/impresoras.jpeg" alt="Reseteo de almohadilla">
+        </div>
+        <div class="service-text">
+    <h3>Reseteo de Almohadilla</h3>
+    <p>Solución a bloqueos de impresoras por contador de uso.</p>
+    <a href="https://wa.me/50493942215?text=Hola,%20quiero%20consultar%20sobre%20Reseteo%20de%20Almohadilla%20para%20impresoras" target="_blank" class="service-btn">Consultar</a>
+</div>
+    </div>
+
+    <div class="service-row reverse">
+        <div class="service-image">
+            <img src="img/bios.jpg" alt="Programación de BIOS">
+        </div>
+       <div class="service-text">
+    <h3>Programación de BIOS</h3>
+    <p>Reparamos problemas de arranque y firmware.</p>
+    <a href="https://wa.me/50493942215?text=Hola,%20quiero%20consultar%20sobre%20Programaci%C3%B3n%20de%20BIOS" target="_blank" class="service-btn">Consultar</a>
+</div>
+    </div>
+
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+ <footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <h3>A&amp;H Technology</h3>
+            <p>
+                Soluciones integrales en mantenimiento, reparación, instalación y soporte
+                tecnológico para hogares, negocios y empresas.
+            </p>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p>
+                <a href="https://wa.me/50493942215" target="_blank">WhatsApp: +504 9394-2215</a>
+            </p>
+            <p>
+                <a href="https://wa.me/50489499433" target="_blank">WhatsApp: +504 8949-9433</a>
+            </p>
+            <p>Correo: inversioneslirios504@gmail.com </p>
+            <p>Ubicación:  Danli, El Paraíso, Honduras</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Enlaces rápidos</h4>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="cotizaciones.html">Cotizar Servicio</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="footer-social">
+            <h4>Redes sociales</h4>
+            <a href="https://www.facebook.com/ahtechnology504" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/ahtechnology24/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@ah_technology24?_r=1&_t=ZS-95U5kHo2nI5" target="_blank">TikTok</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 A&amp;H Technology Soluciones Integrales. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
