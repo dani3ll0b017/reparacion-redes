@@ -1,23 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solicita cotizaciones en línea y conoce los métodos de pago disponibles en A&H Technology.">
+    <title>Cotizaciones | A&H TECHNOLOGY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container nav-container">
+        <h1 class="logo">A&amp;H TECHNOLOGY</h1>
+
+        <nav id="menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="cotizaciones.html" class="active">Cotizaciones</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+            </ul>
+        </nav>
+
+        <button id="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+</header>
+
 <main>
-        <section class="container" style="padding: 4rem 0;">
-            <h2 style="text-align: center; margin-bottom: 2rem;">Cotizaciones en Línea y Métodos de Pago</h2>
-            
-            <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
-                <div style="flex: 1; min-width: 300px; background: #fff; padding: 2rem; border-radius: 8px;">
-                    <h3>Solicitar Presupuesto Formal</h3>
-                    <p>Si representas a una empresa y necesitas una cotización formal para un proyecto de cableado estructurado o instalación de CCTV, envíanos los detalles. Incluiremos costos de materiales, mano de obra y tiempos de entrega.</p>
-                    <a href="contacto.html" class="btn" style="margin-top: 1rem;">Ir al Formulario</a>
+
+    <section class="page-banner">
+        <div class="container">
+            <h2>Cotizaciones en Línea y Métodos de Pago</h2>
+            <p>Solicita tu presupuesto de forma rápida y conoce las opciones de pago disponibles.</p>
+        </div>
+    </section>
+
+    <section class="quotes-section container">
+        <div class="quotes-grid">
+
+            <article class="quote-card">
+                <div class="quote-icon">
+                    <a href="contacto.html" aria-label="Ir al formulario de contacto">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
                 </div>
-                
-                <div style="flex: 1; min-width: 300px; background: #fff; padding: 2rem; border-radius: 8px;">
-                    <h3>Opciones de Pago Aceptadas</h3>
-                    <ul style="list-style: none; padding-top: 1rem;">
-                        <li style="margin-bottom: 0.5rem;">✅ Transferencias Bancarias (BAC, Ficohsa, Atlántida)</li>
-                        <li style="margin-bottom: 0.5rem;">✅ Pagos mediante código QR</li>
-                        <li style="margin-bottom: 0.5rem;">✅ Efectivo contra entrega</li>
-                        <li style="margin-bottom: 0.5rem;">✅ Tarjetas de crédito/débito (Aplica recargo)</li>
-                    </ul>
+
+                <h3>Solicitar Presupuesto Formal</h3>
+
+                <p>
+                    Si representas a una empresa y necesitas una cotización formal para un proyecto
+                    de cableado estructurado o instalación de CCTV, envíanos los detalles.
+                    Incluiremos costos de materiales, mano de obra y tiempos de entrega.
+                </p>
+
+                <a href="contacto.html" class="btn">Ir al Formulario</a>
+            </article>
+
+            <article class="quote-card">
+                <div class="quote-icon">
+                    <a href="contacto.html" aria-label="Consultar métodos de pago">
+                        <i class="fas fa-credit-card"></i>
+                    </a>
                 </div>
-            </div>
-        </section>
-    </main>
+
+                <h3>Opciones de Pago Aceptadas</h3>
+
+                <ul class="payment-list">
+                    <li>Transferencias Bancarias (BAC, Ficohsa, Atlántida)</li>
+                    <li>Pagos mediante código QR</li>
+                    <li>Efectivo contra entrega</li>
+                    
+                </ul>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="quote-note container">
+        <div class="quote-note-box">
+            <h3>Atención personalizada para proyectos</h3>
+
+            <p>
+                Brindamos cotizaciones personalizadas para hogares, negocios y empresas,
+                tomando en cuenta el tipo de servicio, la cantidad de equipos, los materiales
+                necesarios y el tiempo estimado de ejecución.
+            </p>
+
+            <p>
+                Nuestros servicios incluyen instalación de cámaras de seguridad (CCTV),
+                reparación de computadoras y venta de equipo de cómputo, garantizando
+                soluciones eficientes y de alta calidad.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <h3>A&amp;H Technology</h3>
+            <p>
+                Soluciones integrales en mantenimiento, reparación, instalación y soporte
+                tecnológico para hogares, negocios y empresas.
+            </p>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p><a href="https://wa.me/50493942215" target="_blank">WhatsApp: +504 9394-2215</a></p>
+            <p><a href="https://wa.me/50489499433" target="_blank">WhatsApp: +504 8949-9433</a></p>
+            <p>Correo: inversioneslirios504@gmail.com</p>
+            <p>Ubicación: Danlí, El Paraíso, Honduras</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Enlaces rápidos</h4>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="cotizaciones.html">Cotizar Servicio</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="footer-social">
+            <h4>Redes sociales</h4>
+            <a href="https://www.facebook.com/ahtechnology504" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/ahtechnology24/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@ah_technology24" target="_blank">TikTok</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 A&amp;H Technology Soluciones Integrales. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
