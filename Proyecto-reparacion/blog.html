@@ -1,21 +1,250 @@
-<main>
-        <section class="container" style="padding: 4rem 0;">
-            <h2 style="text-align: center; margin-bottom: 2rem;">Blog y Consejos Tecnológicos</h2>
-            
-            <div style="display: flex; flex-direction: column; gap: 2rem;">
-                <article style="background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                    <h3 style="color: var(--primary-color);">¿Por qué tu computadora está tan lenta? (Y cómo solucionarlo)</h3>
-                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">Publicado el 5 de Abril de 2026</p>
-                    <p>Un disco duro mecánico (HDD) viejo suele ser el culpable número uno del rendimiento lento. Descubre cómo una actualización a un disco de estado sólido (SSD) puede darle una segunda vida a tu equipo, haciéndolo hasta 10 veces más rápido...</p>
-                    <a href="#" style="color: var(--primary-color); font-weight: bold; text-decoration: none;">Leer más -></a>
-                </article>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog y consejos tecnológicos de A&H Technology.">
+    <title>Blog | A&H TECHNOLOGY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-                <article style="background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                    <h3 style="color: var(--primary-color);">La importancia del mantenimiento preventivo en impresoras</h3>
-                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">Publicado el 20 de Marzo de 2026</p>
-                    <p>Evita que la tinta se seque en los cabezales o que el polvo arruine los rodillos. Te explicamos cada cuánto tiempo debes llevar tu impresora Epson o HP a su mantenimiento rutinario...</p>
-                    <a href="#" style="color: var(--primary-color); font-weight: bold; text-decoration: none;">Leer más -></a>
+<header>
+    <div class="container nav-container">
+        <h1 class="logo">A&amp;H TECHNOLOGY</h1>
+
+        <nav id="menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="cotizaciones.html">Cotizaciones</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+            </ul>
+        </nav>
+
+        <button id="menu-toggle">☰</button>
+    </div>
+</header>
+
+<main>
+
+    <section class="page-banner">
+        <div class="container">
+            <h2>Blog y Consejos Tecnológicos</h2>
+            <p>Tips profesionales para mejorar el rendimiento de tus equipos.</p>
+        </div>
+    </section>
+
+    <section class="blog-section container">
+
+        <div class="blog-intro">
+            <span class="blog-kicker">A&amp;H TECHNOLOGY</span>
+            <h3>Artículos y Consejos</h3>
+            <p>
+                Aprende a cuidar tus computadoras, impresoras y equipos tecnológicos
+                con recomendaciones profesionales.
+            </p>
+        </div>
+
+        <div class="blog-grid">
+
+            <div class="blog-card-link" onclick="mostrarArticulo(1)">
+                <article class="blog-card">
+                    <div class="blog-image-wrap">
+                        <img src="img/b1.jpg" alt="Computadora lenta">
+                        <span class="blog-category">Computadoras</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Publicado el 5 de Abril de 2026</span>
+                        <h3>¿Por qué tu computadora está tan lenta?</h3>
+                        <p>
+                            Un disco duro mecánico puede afectar seriamente el rendimiento.
+                            Descubre cómo mejorar la velocidad de tu equipo.
+                        </p>
+                    </div>
                 </article>
             </div>
-        </section>
-    </main>
+
+            <div class="blog-card-link" onclick="mostrarArticulo(2)">
+                <article class="blog-card">
+                    <div class="blog-image-wrap">
+                        <img src="img/impresoras.jpeg" alt="Impresoras">
+                        <span class="blog-category">Impresoras</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Publicado el 20 de Marzo de 2026</span>
+                        <h3>Mantenimiento preventivo en impresoras</h3>
+                        <p>
+                            Evita daños y fallas realizando mantenimiento periódico
+                            en tus equipos de impresión.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-card-link" onclick="mostrarArticulo(3)">
+                <article class="blog-card">
+                    <div class="blog-image-wrap">
+                        <img src="img/blog3.jpg" alt="Windows 11">
+                        <span class="blog-category">Windows 11</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Publicado el 10 de Abril de 2026</span>
+                        <h3>Errores comunes de Windows 11</h3>
+                        <p>
+                            Problemas de rendimiento, errores y fallas del sistema
+                            que pueden afectar tu computadora.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-card-link" onclick="mostrarArticulo(4)">
+                <article class="blog-card">
+                    <div class="blog-image-wrap">
+                        <img src="img/blog4.avif" alt="Laptop caliente">
+                        <span class="blog-category">Laptops</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Publicado el 28 de Marzo de 2026</span>
+                        <h3>¿Por qué se calienta tu laptop?</h3>
+                        <p>
+                            Aprende las causas del sobrecalentamiento y cómo evitar daños graves.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-card-link" onclick="mostrarArticulo(5)">
+                <article class="blog-card">
+                    <div class="blog-image-wrap">
+                        <img src="img/blog5.jpg" alt="Virus informáticos">
+                        <span class="blog-category">Seguridad</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Publicado el 15 de Marzo de 2026</span>
+                        <h3>Cómo proteger tu PC de virus</h3>
+                        <p>
+                            Consejos básicos para mantener tu computadora segura.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-card-link" onclick="mostrarArticulo(6)">
+                <article class="blog-card">
+                    <div class="blog-image-wrap">
+                        <img src="img/blog6.jpg" alt="PC gamer">
+                        <span class="blog-category">PC Gamer</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Publicado el 2 de Abril de 2026</span>
+                        <h3>Optimiza tu PC Gamer</h3>
+                        <p>
+                            Mejora el rendimiento de tus juegos con estos consejos.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+        <div id="articulo-contenido" class="articulo-contenido">
+            <button class="cerrar-articulo" onclick="cerrarArticulo()">×</button>
+            <h3 id="titulo-articulo"></h3>
+            <p id="texto-articulo"></p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <h3>A&amp;H Technology</h3>
+            <p>Soluciones tecnológicas profesionales para hogares y empresas.</p>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p><a href="https://wa.me/50493942215" target="_blank">WhatsApp</a></p>
+            <p>Correo: soporte@techfix.hn</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Enlaces</h4>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="footer-social">
+            <h4>Redes</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 A&amp;H Technology</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+<script>
+function mostrarArticulo(id) {
+    const titulo = document.getElementById("titulo-articulo");
+    const texto = document.getElementById("texto-articulo");
+    const contenedor = document.getElementById("articulo-contenido");
+
+    if (id === 1) {
+        titulo.innerText = "¿Por qué tu computadora está tan lenta?";
+        texto.innerText = "Una computadora puede volverse lenta por varias razones: acumulación de archivos temporales, poca memoria RAM, disco duro mecánico, programas ejecutándose en segundo plano o incluso virus. Una de las mejores soluciones es hacer mantenimiento preventivo, optimizar el sistema y, en algunos casos, reemplazar el disco duro por una unidad SSD para mejorar considerablemente el rendimiento.";
+    }
+
+    if (id === 2) {
+        titulo.innerText = "Mantenimiento preventivo en impresoras";
+        texto.innerText = "El mantenimiento preventivo en impresoras ayuda a evitar atascos de papel, problemas de tinta y desgaste interno. Es recomendable limpiar rodillos, revisar cartuchos y hacer pruebas periódicas para asegurar que el equipo funcione correctamente. Esto prolonga la vida útil de la impresora y reduce reparaciones costosas.";
+    }
+
+    if (id === 3) {
+        titulo.innerText = "Errores comunes de Windows 11";
+        texto.innerText = "Entre los errores más comunes de Windows 11 están la lentitud del sistema, incompatibilidad de programas, problemas con actualizaciones, fallos de audio y errores de arranque. Mantener el sistema actualizado, revisar controladores y hacer diagnósticos periódicos puede ayudarte a prevenir estos inconvenientes.";
+    }
+
+    if (id === 4) {
+        titulo.innerText = "¿Por qué se calienta tu laptop?";
+        texto.innerText = "El sobrecalentamiento en laptops puede deberse a ventiladores sucios, pasta térmica desgastada, exceso de uso o mala ventilación. Si no se corrige a tiempo, puede causar apagones inesperados o daños en la tarjeta madre. Un mantenimiento preventivo ayuda mucho a evitar este problema.";
+    }
+
+    if (id === 5) {
+        titulo.innerText = "Cómo proteger tu PC de virus";
+        texto.innerText = "Para proteger tu computadora de virus es importante usar un antivirus confiable, evitar descargas de sitios desconocidos, no abrir enlaces sospechosos y mantener actualizado el sistema operativo. También se recomienda hacer copias de seguridad periódicas para evitar pérdida de información.";
+    }
+
+    if (id === 6) {
+        titulo.innerText = "Optimiza tu PC Gamer";
+        texto.innerText = "Para mejorar el rendimiento de una PC Gamer puedes actualizar drivers, limpiar archivos innecesarios, revisar la temperatura de los componentes y optimizar la configuración gráfica de los juegos. También es importante contar con buena memoria RAM y almacenamiento rápido tipo SSD.";
+    }
+
+    contenedor.style.display = "block";
+    contenedor.scrollIntoView({ behavior: "smooth" });
+}
+
+function cerrarArticulo() {
+    document.getElementById("articulo-contenido").style.display = "none";
+}
+</script>
+
+</body>
+</html>
